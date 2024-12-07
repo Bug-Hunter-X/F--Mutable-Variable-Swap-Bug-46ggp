@@ -1,0 +1,3 @@
+# F# Mutable Variable Swap Bug
+
+This example demonstrates a common mistake when working with mutable variables in F#.  The `swap` function attempts to swap the values of two mutable variables, but it fails to do so correctly because F#'s mutable variables are passed by value, not by reference.  The solution involves using a tuple or ref cell to allow modification of the variables outside the function's scope.
